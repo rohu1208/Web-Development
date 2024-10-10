@@ -1,0 +1,16 @@
+{
+  "name": "day-1",
+  "version": "1.0.0",
+  "main": "1script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rohanKaitake",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "random": "^5.1.1",
+    "words": "^0.2.1"
+  }
+}
