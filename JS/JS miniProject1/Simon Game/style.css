@@ -1,0 +1,196 @@
+/* body{
+    text-align:center;
+}
+
+.btn{
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    border: 10px solid black;
+    margin: 2.5rem;
+
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+.green {
+    background-color: #00FF00;
+  }
+  
+  .red {
+    background-color: #FF0000;
+  }
+  
+  .yellow {
+    background-color: #FFFF00;
+  }
+  
+  .blue {
+    background-color: #0000FF;
+  }
+
+.flash{
+    background-color: white;
+}
+
+.userflash{
+    background-color: green;
+} */
+
+
+/* updated css */
+/* General Styles */
+/* General Styles */
+body {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #61dafb;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+#level-title {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Button Container Styling */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Button Styling */
+.btn {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    border: 5px solid #333;
+    margin: 1rem;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in-out;
+    background-image: linear-gradient(135deg, #555, #888);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.btn:hover::before {
+    opacity: 1;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Individual Button Colors */
+.red {
+    background-image: linear-gradient(45deg, #ff4c4c, #ff0000);
+}
+
+.green {
+    background-image: linear-gradient(45deg, #4cff4c, #00ff00);
+}
+
+.yellow {
+    background-image: linear-gradient(45deg, #ffff4c, #ffcc00);
+}
+
+.blue {
+    background-image: linear-gradient(45deg, #4c4cff, #0000ff);
+}
+
+/* Flash animations */
+.flash {
+    animation: flashAnimation 0.2s forwards;
+}
+
+@keyframes flashAnimation {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* User button click flash */
+.userflash {
+    animation: userFlashAnimation 0.2s forwards;
+}
+
+@keyframes userFlashAnimation {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.7;
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .btn {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    #level-title {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        height: 120px;
+        width:
+

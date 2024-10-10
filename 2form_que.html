@@ -1,0 +1,76 @@
+<!--Create a search option that redirects its serach request to google-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q" placeholder="search in google">
+        <button>Search</button>
+    </form>
+    <form action="/server">
+        <input type="checkbox" id="age" name="age"/>
+        <label for="age">I am 18+</label>
+        <div>
+            <input type="radio" name="fruit" id="apple" value="apple"
+            <label for="apple">apple</label>
+            <input type="radio" name="fruit" id="mango" value="mango"
+            <label for="mango">apple</label>
+            <input type="radio" name="fruit" id="banana" value="banana"
+            <label for="banana">apple</label>
+        </div>
+        <button>submit</button>
+
+
+        <!--Checkbox-->
+        <div>
+            Choose your subjects=
+            <input type="checkbox" name="subjects" id="math" value="math"
+            <label for="apple">math</label>
+            <input type="checkbox" name="subjects" id="science" value="sci"
+            <label for="mango">science</label>
+            <input type="checkbox" name="subjects" id="history" value="hist"
+            <label for="history">history</label>
+
+        </div>
+        <div>
+            Choose your profession
+            <select name="Profession" id="profession">
+                <option value="engineer">engineer</option>
+                <option value="doctor" selected >Doctor</option>
+            </select>
+
+        </div>
+        <div>
+            <label for="vol">Select volume</label>
+            <input type="range" min="0" max="100" id="vol" name="vol" step="10" value="50">
+            <button>Submittttt</button>
+
+
+        </div>
+
+        <hr>
+        <h3>Registration Form</h3>
+        <div>
+            <input type="text" placeholder="First name" name="fname"/>
+            <input type="text" placeholder="last name" name="lname"/>
+        </div>
+        <div>
+            Please select yout gender
+            <select name="gender" id="gender">Please Select gender
+                <option value="male" selected>Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+        <div>
+            Do you agree to all terms of services?
+            <input type="checkbox" name="agree" id="agree" value="agree" checked>
+            <label for="agree">Yes,I agree</label>
+        </div>
+        <button>Register</button>
+    </form>
+</body>
+</html>
